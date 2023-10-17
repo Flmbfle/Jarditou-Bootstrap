@@ -10,19 +10,19 @@
 
 <body>
 
-    <header class="flex">     <!--Entete-->
-        <img class="one" id="one" src="assets/img/jarditou_logo.jpg" alt="jarditou_logo">
-        <p class="two flex" id="two">Tout le jardin</p>
+    <header>     <!--Entete-->
+        <img id="one" src="assets/img/jarditou_logo.jpg" alt="jarditou_logo">
+        <p id="two">Tout le jardin</p>
       </header>     <!--Fin Entete-->
   
   
       <nav typeof="SiteNavigationElement">      <!--Menu Navigation-->
-        <ul class="nav-list flex">
-          <li><a class="nav-list-item" href="index.html">Accueil</a></li>
-          <li><a class="nav-list-item" href="tableau.html">Tableau</a></li>
-          <li><a class="nav-list-item" href="contact.html">Formulaire</a></li>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="tableau.html">Tableau</a></li>
+          <li><a href="contact.html">Formulaire</a></li>
         </ul>
-        <img class="promo" src="assets/img/promotion.jpg" alt="promotion">      <!--Banderole Promo-->
+        <img src="assets/img/promotion.jpg" alt="promotion">      <!--Banderole Promo-->
       </nav>      <!--Fin Menu Navigation-->
 
     <hr>
@@ -32,54 +32,54 @@
         
     <fieldset id="form">
         <h4><b>* </b>Ces zones sont obligatoires.</h4>
-        <fieldset class="form1">
+        <fieldset>
 
             <legend>Vos Coordonnées</legend>
 
-                <label for="nom" class="formu" >Votre nom<b>* </b>: </label><input required type="text" name="nom" id="nom" class="formu">
+                <label for="nom" >Votre nom<b>* </b>: </label><input required type="text" name="nom" id="nom">
 
             <br>
 
-                <label for="prenom" class="formu">Votre prénom<b>* </b>: </label><input required type="text" name="prenom" id="prenom" class="formu">
+                <label for="prenom">Votre prénom<b>* </b>: </label><input required type="text" name="prenom" id="prenom">
 
             <br>
 
-                <label for="ddn" class="formu">Date de naissance : </label><input type="date" name="ddn" id="ddn" class="formu">
+                <label for="ddn">Date de naissance : </label><input type="date" name="ddn" id="ddn">
 
             <br>
 
 
-            <label for=sexe class="formu"> Sexe<b>*</b> : </label>
-                <input type="radio" name="sexe" value="Féminin" required id="sexe" class="formu"> Féminin
-                <input type="radio" name="sexe" value="Masculin" class="formu"> Masculin
+            <label for=sexe> Sexe<b>*</b> : </label>
+                <input type="radio" name="sexe" value="Féminin" required id="sexe"> Féminin
+                <input type="radio" name="sexe" value="Masculin" > Masculin
 
             <br>
 
-                <label for="cp" class="formu">Code postal<b>* </b>: </label><input required type="number" name="cp" id="cp" class="formu">
+                <label for="cp">Code postal<b>* </b>: </label><input required type="number" name="cp" id="cp">
 
             <br>
 
-                <label for="adresse" class="formu">Adresse : </label><input type="text" name="adresse" id="adresse" class="formu">
+                <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse">
 
             <br>
 
-                <label for="ville" class="formu">Ville : </label><input type="text" name="ville" id="ville" class="formu">
+                <label for="ville">Ville : </label><input type="text" name="ville" id="ville">
 
             <br>
 
-                <label for="email" class="formu">Email<b>* </b>: </label><input required type="email" name="email" id="email" placeholder="dave.loper@afpa.fr" class="formu" >
+                <label for="email">Email<b>* </b>: </label><input required type="email" name="email" id="email" placeholder="dave.loper@afpa.fr">
 
         </fieldset>   
 
             <br>
 
-        <fieldset class="form1">
+        <fieldset>
 
             <legend>Votre demande</legend>
 
-            <label for="sujet" class="formu">Sujet<b>* </b>: </label>
+            <label for="sujet">Sujet<b>* </b>: </label>
 
-                <select id="demande" class="formu" name="sujet" required> 
+                <select id="demande" name="sujet" required> 
 
                     <option value="" selected disabled>Veuillez séléctionner un sujet</option>
 
@@ -95,15 +95,15 @@
             <br>
             <br>
 
-            <label for="question" class="formu">Votre question<b>* </b>: </label>
+            <label for="question">Votre question<b>* </b>: </label>
             <br>
             <span>
-                <textarea class="formu" id="subject" name="subject" placeholder="Je souhaiterez avoir des informations concernant la Promotion sur les lames de terrasse."></textarea>
+                <textarea id="subject" name="subject" placeholder="Je souhaiterez avoir des informations concernant la Promotion sur les lames de terrasse."></textarea>
             </span>
                   
         </fieldset>
 
-        <h4><input type="checkbox" name="conditions" value="j'accepte le traitement informatique de ce formulaire" class="formu"><b>* </b>J'accepte le traitement informatique de ce formulaire.</h4>
+        <h4><input type="checkbox" name="conditions" value="j'accepte le traitement informatique de ce formulaire"><b>* </b>J'accepte le traitement informatique de ce formulaire.</h4>
 
                 <input type="submit">
 
@@ -114,11 +114,11 @@
 
     <hr>
     
-    <footer class="footer">
-        <ul class="nav-list">
-            <li><a href="#" class="nav-list-item">Mention légales</a></li>
-            <li><a href="#" class="nav-list-item">Horaires</a></li>
-            <li><a href="#" class="nav-list-item">Plan du site</a></li>       
+    <footer">
+        <ul>
+            <li><a href="#">Mention légales</a></li>
+            <li><a href="#">Horaires</a></li>
+            <li><a href="#">Plan du site</a></li>       
         </ul>
     </footer>
 
