@@ -14,41 +14,32 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body>
+  <body class="shadow m-3 py-3 rounded-4">
     <div class="container-fluid">
       <!--Entete-->
       <header class="d-none d-md-block">
         <div class="d-flex justify-content-between">
           <img
-            class="col-2 img-fluid"
+            class="w-25 img-fluid"
             id="one"
             src="assets/img/jarditou_logo.jpg"
             alt="jarditou_logo"
           />
-          <h2 class="pt-4 col-2" id="two">Tout le jardin</h2>
+          <h2 class="align-self-center w-auto me-5 fs-3 fw-normal" id="two">Tout le jardin</h2>
         </div>
       </header>
       <!--Fin Entete-->
 
-      <nav class="navbar navbar-expand-md bg-light">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+      <nav class="navbar navbar-expand-md bg-secondary-subtle">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ms-2 fs-5 align-self-center">Jarditou.com</a>
+          </li>
+        </ul>
+        <div class="collapse navbar-collapse ps-3" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <p class="nav-link">Jarditou.com</p>
-            </li>
-            <li class="nav-item">
-              <a href="index.html" class="nav-link text-dark">Accueil</a>
+              <a href="index.html" class="nav-link text-dark fw-semibold">Accueil</a>
             </li>
             <li class="nav-item">
               <a href="tableau.html" class="nav-link text-dark">Tableau</a>
@@ -58,18 +49,32 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-3">
-          <div class="input-group mb-2">
+        <div>
+          <form class="input-group">
             <input
-              type="recherche"
-              class="form-control"
-              id="inputrecherche"
+              type="text"
+              class="form-control d-none d-md-block me-1 fs-6 fw-light"
+              id="inputRecherche"
               placeholder="Votre promotion"
             />
-            <button type="submit" class="btn btn-outline-success">
+            <button
+              type="submit"
+              class="btn btn-outline-success me-2 d-none d-md-block"
+            >
               Rechercher
             </button>
-          </div>
+          </form>
+          <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         </div>
       </nav>
 
@@ -80,13 +85,10 @@
       />
       <!-- Bande Promo -->
 
-      <div class="row">
+      <div class="row ms-0 me-0 shadow mb-3 bg-white">
         <!-- Boite Main -->
-        <div class="col-md-8 col-12">
+        <div class="col-md-8 col-12 p-2 mt-0 shadow mb-md-0 mb-3 bg-white">
           <!-- Content -->
-          <h1>Accueil</h1>
-          <hr />
-
           <article>
             <!-- Article 1 Section 1 -->
             <h2>L'entreprise</h2>
@@ -129,31 +131,57 @@
             <p>
               Vous pouvez bien sûr contacter pour de plus amples informations ou
               pour une demande d’intervention. Vous souhaitez un devis ? Nous
-              vous le réalisons gratuitement.
+              vous le réalisons gratuitement. 
+            </p>
+            <p class="d-none d-md-block">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet commodi obcaecati iure mollitia magni. Cupiditate magnam repellendus id vel rem quibusdam esse quos consectetur expedita repudiandae? Doloremque quibusdam tempore distinctio?
             </p>
           </article>
           <!-- Fin Article 2 Section 2 -->
         </div>
         <!-- Fin Content -->
 
-        <div class="col-md-4 col-12">
+        <div class="col-md-4 col-12 bg-warning">
           <!-- Colonne de Droite -->
-          <aside>[COLONNE DROITE]</aside>
+          <aside class="d-flex justify-content-center py-2 mt-md-2 fw-medium fs-4">[Colonne de droite]</aside>
         </div>
       </div>
       <!-- Fin Boite Main -->
 
-      <footer>
+      <footer class="bg-dark rounded-2">
         <!-- Pied de Page -->
-        <nav>
-          <!-- Menu Navigation -->
-          <ul>
-            <li><a href="#">Mention légales</a></li>
-            <li><a href="#">Horaires</a></li>
-            <li><a href="#">Plan du site</a></li>
-          </ul>
-        </nav>
-        <!-- Fin Menu Navigation -->
+        <div class="row">
+          <nav class="navbar navbar-expand-md">
+            <button
+              class="navbar-toggler ms-4 bg"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarFooter"
+              aria-controls="navbarFooter"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon "><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+              </svg></span>
+            </button>
+            <!-- Menu Navigation -->
+            <div class="collapse navbar-collapse" id="navbarFooter">
+              <ul class="navbar-nav ms-3">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-secondary">Mention légales</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-secondary">Horaires</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-secondary">Plan du site</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Fin Menu Navigation -->
+          </nav>
+        </div>
       </footer>
     </div>
   </body>
