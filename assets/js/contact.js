@@ -46,12 +46,11 @@ $(document).ready(function() {
             envoi = false;
             $("#VilleError").text("La ville doit comporter au moins 1 caractère.").removeClass("d-none");
         }
-        if (email.indexOf("@") === -1) {
+        if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
             envoi = false;
-            $("#EmailError").text("L'adresse email doit contenir le caractère '@'.").removeClass("d-none");
+            $("#EmailError").text("L'adresse email n'est pas valide.").removeClass("d-none");
         }
         if (sujet === "") {
-            console.log('dfsdfi')
             envoi = false;
             $("#SujetError").text("Veuillez sélectionner un sujet.").removeClass("d-none");
         }
