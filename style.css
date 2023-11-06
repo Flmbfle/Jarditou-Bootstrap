@@ -1,0 +1,11 @@
+.card {
+    width: 40vh;
+    transition: transform .2s;
+}
+
+
+.card:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
